@@ -1,0 +1,107 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  font-size: 62.5%;
+  --font-family-text: 'Roboto', sans-serif;
+  ;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: var(--font-family-text);
+  color: #323238;
+  background-color: white;
+
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  gap: 20rem;
+  margin-top: -10rem;
+}
+
+.timer-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 6rem;
+}
+
+button {
+  border: none;
+  transition: .3s;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.hide {
+  display: none;
+}
+
+.timer {
+  display: flex;
+  margin-bottom: 1.7rem;
+  gap: .5rem;
+}
+
+.timer p {
+  font-size: clamp(5rem, 5rem + 10vw, 11rem);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 14.8rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.controls {
+  display: flex;
+  gap: 3rem;
+}
+
+.controls button {
+  background: transparent;
+}
+
+.controls button svg {
+  width: 4.8rem;
+  height: 4.8rem
+}
+
+.controls button:hover>svg path {
+  fill: #7d7d86;
+}
+
+.sound {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3.2rem;
+}
+
+.sound button {
+  height: 15.2rem;
+  width: 13.8rem;
+  border-radius: 2rem;
+}
+
+.sound button:hover {
+  opacity: 0.8;
+}
+
+.sounds {
+  background-color: #E1E1E6;
+}
+
+/* .ghost {
+  background-color: #02799D;
+} */
